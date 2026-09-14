@@ -1,0 +1,16 @@
+{
+  "name": "loop-testing-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A database-free demo app for evaluating no-code testing tools.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs public",
+    "start": "node scripts/serve.mjs public",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "test": "node --test",
+    "check": "node --check public/app.js && node --check public/model.js && npm test && npm run build"
+  },
+  "engines": { "node": ">=20" }
+}
